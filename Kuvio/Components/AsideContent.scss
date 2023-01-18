@@ -1,0 +1,72 @@
+﻿@import "../_variables.scss";
+
+.aside-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 146px;
+    width: auto;
+
+    .bold-text {
+        font-family: 'Manuka';
+        font-style: italic;
+        font-weight: 600;
+        font-size: 128px;
+        line-height: 82.6%;
+        text-transform: uppercase;
+        color: $primary-dark;
+        max-width: 50%;
+        margin-right: 168px;
+    }
+
+    .side-content {
+        color: #2B2A2B;
+        font-family: 'Satoshi Variable';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+
+        section {
+            .title {
+                font-family: 'Satoshi Variable';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 115%;
+                color: $primary-dark;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                .num {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 115%;
+                    color: $dark-grey;
+                    margin-right: 30px;
+                }
+
+                img {
+                    margin-right: 30px;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                margin-left: 30px;
+            }
+
+            ul {
+                list-style-type: '—';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                margin-left: 30px;
+            }
+        }
+    }
+}

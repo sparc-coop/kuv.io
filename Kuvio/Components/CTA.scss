@@ -1,0 +1,73 @@
+﻿@import "../_variables.scss";
+
+.call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    background: $light-background;
+    border-top: 1px solid $light-grey;
+
+    section {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        padding-top: 125px;
+        padding-bottom: 125px;
+        min-width: 48%;
+
+        .title {
+            font-family: 'Manuka';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 128px;
+            line-height: 82.6%;
+            text-transform: uppercase;
+            display: block;
+
+            img {
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-family: 'Satoshi Variable';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 115%;
+        }
+
+        .request-form {
+            margin: 30px;
+            width: 400px;
+
+            input {
+                font-family: 'Satoshi Variable';
+                width: 400px;
+                border: 0px;
+                border-bottom: 1px solid black;
+                margin-top: 30px;
+                color: $dark-grey;
+            }
+
+            button {
+                font-family: 'Satoshi Variable';
+                padding: 17px 53px;
+                color: $white;
+                background: $primary-dark;
+                border-radius: 100px;
+                margin: 25px;
+            }
+        }
+    }
+
+    .request {
+        border-left: 1px solid $light-grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,49 @@
+﻿<div class="call-to-action">
+    <section class="consult">
+        <span class="title" style="margin-right: 50px;">
+            Book a free 
+        </span>
+        <span class="title">
+            consultation <img src="images/rightarrow.png" width="50" />
+        </span>
+        <p>Let’s make something great together!  Schedule your free consultation now.</p>
+    </section>
+    <div class="divider"></div>
+    <section class="request">
+        <span class="title">Project in mind?</span>
+        <p>Request for our transparent pricing guide straight to your inbox.</p>
+        <div class="request-form">
+        <input placeholder="Your Name" @bind="@Name" />
+        <input placeholder="Your Email" @bind="@Email" />
+        <button @onclick="SendRequest" @onkeydown="KeyboardSendRequest">Request</button>
+        </div>
+        <p>@SubmitText</p>
+    </section>
+</div>
+
+@code {
+    private string? Name { get; set; }
+    private string? Email { get; set; }
+    public string? SubmitText { get; set; } = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    void SendRequest()
+    {
+        //do something with input
+
+        SubmitText = "Your request has been sent!";
+    }
+
+    void KeyboardSendRequest(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            SendRequest();
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+﻿<div class="aside-content" style="background-color: @BgColor">
+    <span class="bold-text">@BoldText</span>
+    <div class="side-content">
+        @AsideComp
+    </div>
+</div>
+
+@code {
+    [Parameter] public string? BoldText { get; set; }
+    [Parameter] public RenderFragment AsideComp { get; set; }
+    [Parameter] public string? BgColor { get; set; }
+}

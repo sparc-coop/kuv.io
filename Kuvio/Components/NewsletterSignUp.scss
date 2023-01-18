@@ -1,0 +1,47 @@
+﻿@import "../_variables.scss";
+
+.newsletter-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $light-grey;
+    margin: 30px;
+    font-family: 'Satoshi Variable';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+
+    input {
+        border: 0px;
+        background: $primary-dark;
+        padding: 10px;
+        font-family: 'Satoshi Variable';
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    button {
+        background: $primary-dark;
+        color: $white;
+        border: 0px;
+        padding: 10px;
+        font-family: 'Satoshi Variable';
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.consultation-button {
+    padding: 17px 73px;
+    border: 1px solid $primary-orange;
+    color: $primary-orange;
+    border-radius: 100px;
+    background: $primary-dark;
+    font-family: 'Satoshi Variable';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 50px;
+}

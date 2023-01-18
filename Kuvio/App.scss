@@ -5,6 +5,31 @@
 //Shared
 @import "Shared/NavMenu";
 @import "Shared/Footer";
+@import "Components/AsideContent";
+@import "Components/SpecialHeading";
+@import "Components/CTA";
+@import "Components/NewsletterSignUp";
 
 //Pages
 @import "Pages/Index";
+
+
+//Fonts
+@font-face {
+    font-family: 'Manuka';
+    src: url(wwwroot/fonts/Manuka-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Satoshi Variable';
+    src: url(wwwroot/fonts/Satoshi-Variable.ttf) format('truetype');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
