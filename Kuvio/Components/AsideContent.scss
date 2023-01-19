@@ -4,7 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 146px;
+    padding: 146px;
     width: auto;
 
     .bold-text {
@@ -28,6 +28,10 @@
         line-height: 32px;
 
         section {
+            margin-bottom: 50px;
+            padding-top: 50px;
+            border-top: 1px solid #AFB0B7;
+
             .title {
                 font-family: 'Satoshi Variable';
                 font-style: normal;

@@ -1,0 +1,32 @@
+﻿<div class="staff-section">
+    @foreach (var item in staffList)
+    {
+        <Staff Img="@item.Img" Name="@item.Name" Title="@item.Title" />
+    }
+
+</div>
+
+@code {
+    public List<StaffMember>? staffList { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //get staff list
+        //dummy staff data to test design
+        List<StaffMember> list = new List<StaffMember>
+        {
+            new StaffMember { Img = "images/rhonda.png", Name = "Rhonda Edwards", Title = "Director of Operations" },
+            new StaffMember { Img = "images/rhonda.png", Name = "Rhonda Edwards", Title = "Director of Operations" },
+            new StaffMember { Img = "images/rhonda.png", Name = "Rhonda Edwards", Title = "Director of Operations" },
+        };
+
+        staffList = list;
+    }
+
+    public class StaffMember
+    {
+        public string? Img { get; set; }
+        public string? Name { get; set; }
+        public string? Title { get; set; }
+    }
+}

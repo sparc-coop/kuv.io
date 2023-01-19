@@ -1,7 +1,26 @@
 ﻿<div class="newsletter-signup">
-    <input placeholder="Enter Your Email" />
-    <button>Request <img src="/images/smallarrow.png" /></button>
+    <input placeholder="Enter Your Email" @bind="Email" />
+    <button @onclick="SubmitEmail" @onkeydown="KeyboardSubmit">Request <img src="/images/smallarrow.png" /></button>
 </div>
-<div class="consultation-button">
+<p>@Confirmation</p>
+<div tabindex="0" class="consultation-button">
     Book a free consultation
 </div>
+
+@code{
+    private string? Email { get; set; }
+    string? Confirmation { get; set; }
+
+    void SubmitEmail()
+    {
+        Confirmation = "Your request has been submitted!";
+    }
+
+    void KeyboardSubmit(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            SubmitEmail();
+        }
+    }
+}

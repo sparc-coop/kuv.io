@@ -1,0 +1,15 @@
+﻿<figure>
+<img src="@Img" />
+<figcaption>
+    @Name
+</figcaption>
+    <figcaption>
+        @Title
+    </figcaption>
+</figure>
+
+@code {
+    [Parameter] public string? Img { get; set; }
+    [Parameter] public string? Name { get; set; }
+    [Parameter] public string? Title { get; set; }
+}

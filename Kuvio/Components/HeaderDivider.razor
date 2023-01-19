@@ -1,0 +1,16 @@
+﻿<div class="divider-component @BgColor">
+<hr class="hr-divider" />
+<div class="header-divider">   
+    <h2>
+        <img src="/images/Kuvio.png" alt="Kuvio Logo" />
+        <button>@SectionTitle</button>
+    </h2>
+    <span>@SectionNum</span>
+</div>
+</div>
+
+@code {
+    [Parameter] public string? BgColor {get; set;}
+    [Parameter] public string? SectionTitle { get; set; }
+    [Parameter] public string? SectionNum { get; set; }
+}
