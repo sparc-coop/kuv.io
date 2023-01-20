@@ -1,0 +1,34 @@
+﻿@page "/resource/{name}"
+
+<HeaderDivider BgColor="white-bg" SectionTitle="Resources" SectionNum="01" />
+<AsideContent BgColor="white-bg" BoldText="The Marketer's Guide to Email Spam Law in The usa">
+    <UnderComp>
+       We’ve created a comprehensive 16 page guide including a Marketer's Compliance Checklist so you can tell if your company is protected and your marketing and communications teams are doing the right thing.
+    <ul>
+            <li>Featuring a 2-page introduction written just for our guide by the Anti-Spam Team at the Department of Internal Affairs.</li>
+        <li>Breaks down the 5 things you need to do to stay within the law.</li>
+    </ul>
+        </UnderComp>
+    <AsideComp>
+        <img src="images/shape.png" alt="" />
+    </AsideComp>
+</AsideContent>
+<div class="get-resource">
+    <span class="title">Get Your Copy</span>
+    <div class="form-section">
+        <input placeholder="First Name*" />
+        <input placeholder="Last Name*" />
+    </div>
+    <div class="form-section">
+        <input placeholder="Company*" />
+        <input placeholder="Email*" />
+    </div>
+    <button>Send it over</button>
+</div>
+<HeaderDivider BgColor="grey-bg" SectionTitle="Other Resources" SectionNum="02" />
+<EntriesList />
+<CTA />
+
+@code {
+    [Parameter] public string? Name { get; set; }
+}

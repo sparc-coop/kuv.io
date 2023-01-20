@@ -1,5 +1,10 @@
 ﻿<div class="aside-content @BgColor">
-    <span class="bold-text">@BoldText</span>
+    <div class="left">
+        <span class="bold-text">
+            @BoldText
+          </span>
+        <span class="under-text">@UnderComp</span>
+    </div>
     <div class="side-content">
         @AsideComp
     </div>
@@ -7,6 +12,7 @@
 
 @code {
     [Parameter] public string? BoldText { get; set; }
-    [Parameter] public RenderFragment AsideComp { get; set; }
+    [Parameter] public RenderFragment? AsideComp { get; set; }
+    [Parameter] public RenderFragment? UnderComp { get; set; }
     [Parameter] public string? BgColor { get; set; }
 }

@@ -1,4 +1,10 @@
 ﻿@charset "UTF-8";
+nav {
+  position: fixed;
+  top: 45px;
+  right: 60px;
+}
+
 .footer {
   background: #061918;
   width: auto;
@@ -36,10 +42,15 @@
 
 .aside-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 146px;
   width: auto;
+}
+.aside-content .left {
+  max-width: 45%;
+  margin-right: 168px;
+  color: #061918;
 }
 .aside-content .bold-text {
   font-family: "Manuka";
@@ -48,9 +59,35 @@
   font-size: 128px;
   line-height: 82.6%;
   text-transform: uppercase;
+}
+.aside-content .under-text {
   color: #061918;
-  max-width: 50%;
-  margin-right: 168px;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 100px;
+  display: block;
+}
+.aside-content .under-text ul {
+  list-style-type: "✓";
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #575757;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 40px;
+  list-style-position: outside !important;
+}
+.aside-content .under-text ul li {
+  padding-left: 20px;
+}
+.aside-content .under-text ul li::marker {
+  color: #D23722;
 }
 .aside-content .side-content {
   color: #2B2A2B;
@@ -59,6 +96,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  min-width: 40%;
 }
 .aside-content .side-content section {
   margin-bottom: 50px;
@@ -312,6 +350,140 @@
   color: #D23722;
 }
 
+.resources {
+  padding: 146px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.resources .resource {
+  margin: 150px 10.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resources .resource img {
+  width: 100%;
+}
+.resources .resource .resource-button {
+  background: #061918;
+  color: #FFFFFF;
+  padding: 17px 48px;
+  border-radius: 100px;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.text-placement {
+  padding: 146px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.text-placement .side-text {
+  width: 999px;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 105%;
+  color: #061918;
+}
+
+.entries-list {
+  background: #D8D9D9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 146px;
+}
+.entries-list .entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #AFB0B7;
+  width: 100%;
+  padding: 30px 0px;
+}
+.entries-list .entry .title {
+  color: #061918;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+}
+.entries-list .entry .info {
+  color: #575757;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+.entries-list .more-link {
+  text-align: center;
+  width: 100%;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 80px;
+  color: #D23722;
+}
+
+.get-resource {
+  background: #061918;
+  text-align: center;
+  padding: 150px;
+  border-radius: 30px 30px 0px 0px;
+}
+.get-resource .title {
+  font-family: "Manuka";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 128px;
+  line-height: 82.6%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 50px;
+}
+.get-resource .form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get-resource .form-section input {
+  color: #FFFFFF;
+  border: 0px;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 30px 10px;
+  padding: 10px;
+  width: 30%;
+}
+.get-resource button {
+  background: #FFFFFF;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #061918;
+  padding: 17px 44px;
+  border-radius: 100px;
+}
+
 @font-face {
   font-family: "Manuka";
   src: url(../fonts/Manuka-Bold.otf) format("opentype");
@@ -334,4 +506,26 @@ body {
 
 .white-bg {
   background: #FFFFFF;
+}
+
+h1 {
+  color: #061918;
+  font-family: "Satoshi Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+input {
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus-visible, :focus {
+  border: 2px solid #D23722;
+  box-shadow: 1px 1px 3px #061918;
 }

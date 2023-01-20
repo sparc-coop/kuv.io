@@ -1,0 +1,36 @@
+﻿@import "../_variables.scss";
+
+.resources {
+    padding: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .resource {
+        margin: 150px 10.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+
+        .resource-button {
+            background: $primary-dark;
+            color: $white;
+            padding: 17px 48px;
+            border-radius: 100px;
+            font-family: 'Satoshi Variable';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 35px;
+        }
+    }
+}

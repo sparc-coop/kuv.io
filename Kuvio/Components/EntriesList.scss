@@ -1,0 +1,49 @@
+﻿@import "../_variables.scss";
+
+.entries-list {
+    background: $grey-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 146px;
+
+    .entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $light-grey;
+        width: 100%;
+        padding: 30px 0px;
+
+        .title {
+            color: $primary-dark;
+            font-family: 'Satoshi Variable';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+        }
+
+        .info {
+            color: $dark-grey;
+            font-family: 'Satoshi Variable';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .more-link {
+        text-align: center;
+        width: 100%;
+        font-family: 'Satoshi Variable';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        margin: 80px;
+        color: $primary-orange;
+    }
+}

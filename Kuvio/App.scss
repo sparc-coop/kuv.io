@@ -11,9 +11,13 @@
 @import "Components/NewsletterSignUp";
 @import "Components/Staff";
 @import "Components/HeaderDivider";
+@import "Components/Resource";
+@import "Components/SideText";
+@import "Components/EntriesList";
 
 //Pages
 @import "Pages/Index";
+@import "Pages/ResourceItem";
 
 
 //Fonts
@@ -43,3 +47,26 @@ body {
 .white-bg {
     background: $white;
 }
+
+h1 {
+    color: $primary-dark;
+    font-family: 'Satoshi Variable';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+input {
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus-visible, :focus {
+    border: 2px solid $primary-orange;
+    box-shadow: 1px 1px 3px $primary-dark;
+}
+
