@@ -442,6 +442,18 @@ nav {
   color: #D23722;
 }
 
+.landing h1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing h1 .landing-logo {
+  position: relative;
+  top: -50px;
+}
+
 .get-resource {
   background: #061918;
   text-align: center;
